@@ -28,3 +28,4 @@ for series in json_data['Results']['series']:
             x.add_row([seriesId,year,period,value,footnotes[0:-1]])
     output = open(seriesId + '.txt','w')
     output.write (x.get_string())
+    output.close()
